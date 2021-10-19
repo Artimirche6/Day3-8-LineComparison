@@ -1,6 +1,6 @@
 public class lineComparison
 {
-	public static void main(String[] args)
+	public static void lengthCompareTo()
 	{
 		int x1 = 5, x2 = 10, y1 = 6, y2 = 12;
 		int x11 = 2, x22 = 4, y11 = 5, y22 = 14;
@@ -14,11 +14,12 @@ public class lineComparison
 		Integer i1 = new Integer(len1);
 		Integer i2 = new Integer(len2);
 		
+		
 		int result = i1.compareTo(i2);
 		
 		System.out.println("Compare: "+i1.compareTo(i2));
 		
-		System.out.println("Equals : "+i1.equals(i2));
+		//System.out.println("Equals : "+i1.equals(i2));
 		
 		if(result > 0)
 		{  
@@ -31,7 +32,13 @@ public class lineComparison
 		else 
 		{  
 			System.out.println("Lines are Equals");  
-		}  
+
+		} 
+	}
+	
+	public static void main(String[] args)
+	{
+		lengthCompareTo();
 	}
 
 }
